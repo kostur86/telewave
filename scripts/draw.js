@@ -71,17 +71,13 @@ function between(x, min, max) {
 }
 
 function button_peek(){
-		if (window.confirm("Are you sure you want to peek?")) {
-				draw(randpos);
-		}
+		draw(randpos);
 		gtag('event', 'peek');
 }
 
 
 function button_guess(){
-		if (window.confirm("Is this your final guess?")) {
-				drawguess();
-		}
+		drawguess();
 		gtag('event', 'guess');
 }
 
@@ -104,13 +100,8 @@ function new_clue(){
 
 
 function update_percentages(){
-		var checkbox = document.getElementById("percentages");
 		var text = document.getElementById("guessdisp");
-		if (checkbox.checked == true){
-				text.style.display = "block";
-		} else {
-				text.style.display = "none";
-		}
+		text.style.display = "none";
 		gtag('event', 'display_percentage');
 }
 
