@@ -99,7 +99,6 @@ function new_clue(){
 		document.getElementById("guessdisp").innerHTML = "50";
 		document.getElementById("guesser").value = 500;
 	
-
 		gtag('event', 'new_clue');
 }
 
@@ -113,4 +112,7 @@ function update_percentages(){
 function button_clear(){
 		clearboard();
 		gtag('event', 'clear_board');
+
+		document.getElementById("guessdisp").innerHTML = "50";
+		document.getElementById("guesser").value = 500;
 }
