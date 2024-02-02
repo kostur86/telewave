@@ -96,7 +96,9 @@ function new_clue(){
 		$("#seed").val(seed.split('(')[0].concat('(').concat(clue_num).concat(')'));
 		fire();
 
-		document.getElementById("guesser").value = 50;
+		document.getElementById("guessdisp").value = 50;
+		document.getElementById("guesser").value = 500;
+	
 
 		gtag('event', 'new_clue');
 }
